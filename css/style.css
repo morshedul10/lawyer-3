@@ -1,0 +1,300 @@
+{
+    margin:0;
+    padding: 0;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #33417c;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #24293d;
+}
+.banner{
+background-image: url(../images/background.png);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+.banner h1{
+    
+    color: #fff;
+    font-size: 65px;
+    text-transform: uppercase;
+}
+.hg{
+    min-height: 90vh;
+    align-items: center;
+}
+.icon{
+
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    font-size: 30px;
+    transform: translateX(-50%);
+    animation: updown 1s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes updown{
+    0%{
+        top: 75%;
+    }
+    100%{
+        top: 80%;
+    }
+}
+
+.who_we_are{
+
+}
+.who_we_are span{
+    
+    height: 5px;
+    width: 0px;
+    background: #E44E24;
+    display: inline-block;
+    transition: 0.5s all ease-in-out;
+}
+.who_we_are h1{
+    
+    font-size: 40px;
+    color: #33417c;
+}
+.who_we_are p{
+    
+    color: #bab5b2;
+}
+.who_we_are:hover span{
+    width: 50px;
+}
+.what_we_do{
+  background-color: #f7f8f8;
+  background-image: url(../images/what_we-do-bg.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 900px;
+}
+.what_we_do:hover .heading span{
+    width: 50px;
+}
+.heading{
+
+}
+.heading span{
+    height: 5px;
+    width: 0px;
+    background: #E44E24;
+    display: block;
+    margin: auto;
+    transition: 0.5s all ease-in-out;
+
+}
+.heading h1{
+    font-size: 40px;
+    color: #33417c;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+.image{
+    position: relative;
+}
+.image::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    left: 0;
+    bottom: 0;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7db9e8+0,36226f+69 */
+background: #7db9e8; /* Old browsers */
+background: -moz-linear-gradient(top,  #7db9e8 0%, #36226f 69%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #7db9e8 0%,#36226f 69%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #7db9e8 0%,#36226f 69%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#36226f',GradientType=0 ); /* IE6-9 */
+
+    
+    opacity: .5;
+    transition: .5s all ease-in-out;
+}
+
+.image:hover::before{
+    height: 100%;
+}
+
+.text{
+
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+.text h1{
+    color: #fff;
+    font-size: 25px; 
+    text-transform: uppercase;
+}
+.image:hover .text{
+    opacity: 1;
+    top: 50%;
+}
+.image_icon{
+    
+    position: absolute;
+    color: #fff;
+    left: 45%;
+    top: 80%;
+    font-size: 30px;
+    transform: translateX;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .5s all ease-in-out;
+}
+.image:hover .image_icon{
+    opacity: 1;
+    left: 50%;
+}
+
+.attroeny_section{
+   background: url(../images/attorney-background.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 100px 0;
+}
+.attroeny_section span{
+   height: 5px;
+   width: 0px;
+   display:block;
+   background-color: #E44E24;
+   transition: .5s all ease-in-out;
+}
+.attroeny_section h1{
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.attroeny_section p{
+   color:  #929dcf;
+
+}
+.attroeny_section a{
+   color: #E44E24;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+.attroeny_section:hover span{
+   width: 50px;
+}
+.designation{
+    position: absolute;
+    left: 20%;
+    top: 80%;
+    opacity: 0;
+    color: #fff;
+    text-transform: uppercase;
+    transition: .5s all ease-in-out;
+   
+
+}
+.image:hover .designation{
+    top: 75%;
+    opacity: 1;
+ }
+ .language:hover .heading span{
+     width: 50px;
+ }
+ .language{
+
+ }
+ .language h2{
+   font-size: 25px;
+   color: #204f87;
+   text-transform: uppercase;
+
+ }
+ .language p{
+    color: #b1b0b1;
+ }
+ .language a{
+   color: #f05428;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-weight: 600;
+
+ }
+
+ .contact{
+  background: #282773;
+ }
+ form{
+
+ }
+ form input{
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #8c8c8c !important;
+    border-radius: 0 !important;
+    caret-color: white !important;
+
+ }
+ form input::placeholder{
+     color: #fff !important;
+ }
+ form textarea::placeholder{
+    color: #fff !important;
+}
+form input :focus{
+    box-shadow:none!important;
+}
+form textarea :focus{
+    box-shadow:none!important;
+}
+ form textarea{
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #8c8c8c !important;
+    border-radius: 0 !important;
+    caret-color: white !important;
+ }
+ form input[type="submit"]{
+     border: none !important;
+     color: #fff;
+     padding: 10px 50px;
+     background: #f05428 !important;
+     border: 2px solid  #f05428 !important;
+     transition: .5s all ease-in-out;
+
+ }
+ form input[type="submit"]:hover{
+     background: transparent !important;
+ }
+ .contact .heading h1{
+     color: #fff ;
+
+ }
+ .contact:hover .heading span{
+     width: 50px;
+ }
+
+ .footer_section{
+    background-color: #0c1234;
+ }
+ .footer_conetents{
+     display: flex;
+ }
+ .footer-text{
+    color: #616ca8;
+ }
+ .text-end{
+     text-align: right !important;
+     color: rgba(255, 255, 255, 0.699);
+    
+ }
+ 
